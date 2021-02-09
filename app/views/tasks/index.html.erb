@@ -1,5 +1,9 @@
 <h1>My tasks</h1>
-
-<% for task in @tasks %>
-  <p><i class="fa <%= task.completed ? 'fa-check-square' : 'fa-square' %> "></i> <%= task.title %></p>
-<% end %>
+<ul>
+  <% for task in @tasks %>
+  <li>
+    <i class="fa <%= task.completed ? 'fa-check-square' : 'fa-square' %> "> </i>
+     <%= link_to(task.title, task_path(task))  %>
+  </li>
+  <% end %>
+</ul>
