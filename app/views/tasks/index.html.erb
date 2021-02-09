@@ -1,0 +1,5 @@
+<h1>My tasks</h1>
+
+<% for task in @tasks %>
+  <p><i class="fa <%= task.completed ? 'fa-check-square' : 'fa-square' %> "></i> <%= task.title %></p>
+<% end %>
