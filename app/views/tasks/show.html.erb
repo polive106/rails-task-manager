@@ -4,3 +4,6 @@
     <i class="fa <%= @task.completed ? 'fa-check-square' : 'fa-square' %> "></i>
     This task is <%= @task.completed ? "completed" : "not completed" %>
 </p>
+<%= link_to 'Edit this task', edit_task_path(@task) %>
+<%= link_to 'Go Home', tasks_path %>
+<%= link_to('Delete', task_path(@task), method: :delete) %>

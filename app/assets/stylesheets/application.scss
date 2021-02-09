@@ -13,4 +13,12 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap/scss/bootstrap";
 
+body {
+  padding: 30px;
+}
+
+.container {
+  width: 700px;
+}
